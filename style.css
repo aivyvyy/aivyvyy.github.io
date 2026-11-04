@@ -1,0 +1,134 @@
+:root {
+  --bg: #fffafb;
+  --fg: #222222;
+  --muted: #88787d;
+  --accent: #d64977;
+  --accent-soft: #f472b6;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace, sans-serif;
+  background-color: var(--bg);
+  color: var(--fg);
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.6;
+}
+
+header {
+  margin-bottom: 2.5rem;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Site Title Link */
+.site-title {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--fg);
+  transition: color 0.15s ease;
+}
+
+.site-title:hover {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+/* Navigation Links */
+nav {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--fg);
+  transition: color 0.15s ease;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.nav-sep {
+  margin: 0 6px;
+  color: var(--muted);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--accent--soft);
+  text-decoration: none;
+}
+
+.ext-icon {
+  font-size: 0.8em;
+  vertical-align: super;
+  text-decoration: none;
+  color: var(--accent);
+}
+
+/* Content Sections & Dropdowns */
+section {
+  margin-bottom: 2rem;
+}
+
+section h2, section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  text-transform: lowercase;
+}
+
+p {
+  margin-bottom: 0.8rem;
+}
+
+details {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+summary:hover {
+  color: var(--fg);
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+li {
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+ul li::marker {
+  color: var(--accent);
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #f3e8eb;
+  font-size: 0.85rem;
+  color: var(--accent);
+}
